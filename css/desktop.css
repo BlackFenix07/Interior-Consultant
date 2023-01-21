@@ -1,0 +1,81 @@
+body {
+  margin: 42px 77px;
+}
+
+header .nav-burger {
+  display: none;
+}
+
+header .nav-desktop-ul {
+  position: static;
+  flex-direction: row;
+  align-items: initial;
+  justify-content: initial;
+  gap: 86px;
+  font-size: 1.8rem;
+}
+
+header .nav-desktop-li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header .nav-desktop-li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 153px;
+}
+
+main .info {
+  gap: 40px;
+  margin-top: 0;
+  margin-bottom: 126px;
+}
+
+main .info h1 {
+  font-size: 4.8rem;
+}
+
+main .paragraph-1 {
+  width: 410px;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+}
+
+main .paragraph-2 {
+  font-size: 1.8rem;
+}
+
+main .info-2 {
+  position: static;
+}
+
+main .profile {
+  position: relative;
+  top: -87px;
+  right: -347px;
+  width: 410px;
+  height: 189px;
+}
+
+main .name-profession b {
+  font-size: 1.4rem;
+}
+
+main .paragraph-3 {
+  font-size: 1.2rem;
+}
+
+main .paragraph-4 {
+  margin-top: 25px;
+  margin-left: 26px;
+  width: 287px;
+  height: 62px;
+  font-size: 2.4rem;
+  line-height: 3rem;
+}

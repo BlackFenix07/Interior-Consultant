@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat";
+}
+
+body {
+  margin: 19px 13px 24px;
+  background: #181719;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  padding: 8px 9px 7px 8px;
+  font-size: 1.4rem;
+  font-weight: 200;
+  font-family: "Crimson Pro";
+  border: 1px solid;
+  cursor: pointer;
+}
+
+header .logo:hover {
+  color: teal;
+}
+
+header .nav-burger {
+  position: relative;
+  z-index: 30;
+  font-size: 2.8rem;
+  cursor: pointer;
+}
+
+header .nav-burger:hover {
+  color: teal;
+}
+
+header .display-black {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 150vw;
+  z-index: 10;
+  background: #181719;
+  transition: left 0.5s;
+}
+
+header .nav-desktop-ul {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 150vw;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  list-style: none;
+  transition: left 0.5s;
+}
+
+header .nav-desktop-li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header .nav-desktop-li a:hover {
+  text-decoration: underline;
+  color: teal;
+}
+
+header .open {
+  left: 0 !important;
+}
+
+header .close-icon {
+  position: relative;
+  z-index: 30;
+  font-size: 3.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 38px;
+  margin-bottom: 26px;
+}
+
+main .info h1 {
+  font-size: 3.6rem;
+  font-weight: 500;
+  font-family: "Lora";
+}
+
+main .paragraph-1 {
+  width: 250px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
+main .paragraph-2 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+main .paragraph-2:hover {
+  color: teal;
+}
+
+main .info-2 {
+  position: relative;
+}
+
+main .room {
+  width: 100%;
+  min-width: 340px;
+  max-width: 821px;
+  min-height: 279px;
+}
+
+main .profile {
+  position: absolute;
+  right: 12px;
+  bottom: -82px;
+  padding-top: 13px;
+  width: 300px;
+  height: 138px;
+  background: #181719;
+  box-shadow: 0 40px 40px rgba(0, 0, 0, 0.25);
+}
+
+main .designer-profile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: 22px;
+}
+
+main .designer {
+  width: 37px;
+  height: 37px;
+  border-radius: 37px;
+}
+
+main .name-profession b {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+main .paragraph-3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #828282;
+}
+
+main .paragraph-4 {
+  margin-top: 18px;
+  margin-left: 19px;
+  width: 210px;
+  height: 45px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Lora";
+  line-height: 2.3rem;
+}
+
+footer {
+  margin-top: 114px;
+  text-align: center;
+  color: #a9a9a9;
+  cursor: pointer;
+}

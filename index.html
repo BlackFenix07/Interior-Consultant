@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Diseño personalizado de interiores." />
+    <meta name="robots" content="index,follow" />
+    <title>Interior Consultant</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1440px)" />
+    <link rel="stylesheet" href="./css/styleHeight.css" media="(min-height: 1130px)" />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a0aacecea0.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <div class="logo">THIS INTERIOR</div>
+      </div>
+      <nav>
+        <div class="nav-burger"><i id="nav-icon" class="fas fa-bars"></i></div>
+        <div class="display-black"></div>
+        <ul class="nav-desktop-ul">
+          <li class="nav-desktop-li"><a href="./index.html">Home</a></li>
+          <li class="nav-desktop-li"><a href="./collection.html" target="_blank">Collection</a></li>
+          <li class="nav-desktop-li"><a href="./about.html" target="_blank">About</a></li>
+          <li class="nav-desktop-li"><a href="./contact.html" target="_blank">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="info">
+        <h1>Modern Interior</h1>
+        <p class="paragraph-1">A full-Service residential & commercial interior design and staging company offering professional organizing & ecoservices.</p>
+        <p class="paragraph-2">Read more <span class="fa-solid fa-arrow-right-long"></span></p>
+      </div>
+      <div class="info-2">
+        <img class="room" src="./images/photo1.png" alt="Modelo de Sala" />
+        <div class="profile">
+          <div class="designer-profile">
+            <img class="designer" src="./images/photo2.png" alt="Diseñadora" />
+            <div class="name-profession">
+              <b>Aliza Webber</b>
+              <p class="paragraph-3">Interior designer</p>
+            </div>
+          </div>
+          <div>
+            <p class="paragraph-4">Designed in 2020 by Aliza Webber</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Created by <b><u><a href="https://github.com/BlackFenix07" target="_blank"> Andrés Zapata</a></u></b> - devChallenges.io</p>
+    </footer>
+    <script>
+      // Se obtienen los elementos por medio del nombre de las clases a manipular, los cuales son:
+      const burgerMenu = document.getElementsByClassName("nav-burger");
+      const displayBlack = document.getElementsByClassName("display-black");
+      const navDesktopUl = document.getElementsByClassName("nav-desktop-ul");
+      const icon = document.getElementById("nav-icon");
+
+      // Se hacen dos cosas, la primera es añadir el evento de escucha del clic al menú hamburguesa y la segunda es evaluar si los elementos displayBlack y navDesktopUl tienen la clase open, si la tienen se elimina, de lo contrario se añade.
+      burgerMenu[0].addEventListener("click", () => {
+        if (displayBlack[0].classList.contains("open")) {
+          displayBlack[0].classList.remove("open");
+          navDesktopUl[0].classList.remove("open");
+          icon.classList.remove("fa-solid", "fa-xmark");
+          icon.classList.add("fas", "fa-bars");
+        } else {
+          displayBlack[0].classList.add("open");
+          navDesktopUl[0].classList.add("open");
+          icon.classList.remove("fas", "fa-bars");
+          icon.classList.add("fa-solid", "fa-xmark");
+        }
+      });
+    </script>
+  </body>
+
+</html>
